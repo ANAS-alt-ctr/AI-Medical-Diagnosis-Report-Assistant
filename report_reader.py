@@ -66,7 +66,15 @@ def _extract_with_spacy(text: str) -> Dict[str, Any]:
         import spacy
         from spacy.matcher import Matcher
 
-        nlp = spacy.load("en_core_web_sm")
+        try:
+            nlp = spacy.load("en_core_web_sm")
+        except OSError:
+            # Model not found, try to download and load
+            import subprocess
+            import sys
+            subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"], check=True)
+            nlp = spacy.load("en_core_web_sm")
+
         doc = nlp(text[:100_000])  # limit tokens
 
         # Rule-based matcher for medical terms

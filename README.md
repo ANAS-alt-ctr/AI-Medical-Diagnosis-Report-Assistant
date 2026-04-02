@@ -24,7 +24,7 @@
 git clone <repo-url>
 cd medical-ai-assistant
 pip install -r requirements.txt
-python -m spacy download en_core_web_sm
+# Note: spaCy model is now automatically handled via requirements.txt
 ```
 
 ### 2 — Get Your NVIDIA API Key (Free)

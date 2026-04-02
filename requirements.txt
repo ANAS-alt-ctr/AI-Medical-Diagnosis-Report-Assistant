@@ -1,9 +1,6 @@
-# MedAI — AI Medical Diagnosis Assistant
-# Install: pip install -r requirements.txt
-
-streamlit==1.32.0
-ultralytics           # YOLOv11 (installs torch automatically)
-openai>=1.14.0        # NVIDIA API client
+streamlit>=1.42.0
+ultralytics
+openai>=1.14.0
 xgboost==2.0.3
 scikit-learn==1.4.0
 shap==0.44.0
@@ -15,6 +12,4 @@ plotly==5.20.0
 matplotlib==3.8.0
 pillow==10.2.0
 python-dotenv==1.0.1
-
-# After install, download spaCy model:
-# python -m spacy download en_core_web_sm
+python-multipart==0.0.9
