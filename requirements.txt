@@ -1,6 +1,5 @@
 streamlit
 ultralytics
-<<<<<<< HEAD
 openai
 xgboost
 scikit-learn
@@ -14,21 +13,4 @@ matplotlib
 pillow
 python-dotenv
 python-multipart
-=======
-openai>=1.14.0
-xgboost==2.0.3
-scikit-learn==1.4.0
-shap==0.44.0
-spacy==3.7.4
-pdfplumber==0.11.0
-pandas==2.2.0
-numpy==1.26.0
-plotly==5.20.0
-matplotlib==3.8.0
-pillow==10.2.0
-python-dotenv==1.0.1
-python-multipart==0.0.9
 opencv-python-headless
-libgl1
-libglib2.0-0
->>>>>>> ce98c23 (fix: replace legacy libgl1-mesa-glx with libgl1 and add opencv-python-headless)
